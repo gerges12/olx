@@ -1,0 +1,39 @@
+
+<div class="show">
+
+    <h1>
+        {{posts.desc}}
+    </h1>
+    <img src="http://localhost:3000/{{posts.file}}" alt="..." class="img-responsive"> 
+    الوصف
+    {{posts.body}}
+    <h5>views: {{posts.view}}</h5>  
+    <h5>add to bookmark: <a href="/star/{{posts._id}}" class="glyphicon glyphicon-star-empty" role="button"></a> </h5> <br>
+
+                
+  <table>
+  <tr>
+    <th>اسم الناشر</th>
+    <th>{{user.name}}</th>
+  </tr>
+  <tr>
+    <td>الرقم</td>
+    <td>{{user.phone}}</td>
+  </tr>
+  <tr>
+    <td>المدينه</td>
+    <td>{{user.city}}</td>
+  </tr>
+  <tr>
+    <td>الحاله</td>
+    <td>{{posts.statue}}</td>
+  </tr>
+  <tr>
+    <td>السعر</td>
+    <td>{{posts.price}}</td>
+  </tr>
+  
+</table>
+</div>
+
+</div>

@@ -1,0 +1,163 @@
+.firma-ara{
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.form-arka-plan{
+  background-image: url("https://cdn.filepicker.io/api/file/1WxRtkAQG5h70aoPQdGA/convert?format=jpeg&quality=50");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.container{
+  width: 1360px ;
+  padding-left: 135px ;
+}
+.acik-renk-form{
+  background: rgba(255, 255, 255, 0.58);
+}
+.siyah-cerceve{
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.myHeader{
+  position: fixed ;
+  top: 0;
+  width: 100% ;
+  z-index: 1;
+}
+.myHeader img{
+  height: 20px ;
+  width: 20px ;
+  margin-right: 5px ;
+
+}
+.myHeader p{
+  font-family: initial ;
+  margin-left: 130px ;
+  font-size: 27px ;
+}
+.myHeader .topnav{
+  margin-top: 13px ;
+  margin-right: 100px ;
+
+}
+.myHeader .topnav input {
+  width: 200px ;
+  padding-left: 10px ;
+  border-radius: 12px;
+
+}
+
+
+
+.above {
+  margin-top: 100px ;
+  margin-bottom: 50px ;
+}
+.post{
+  width: 800px ;
+  margin-top: 100px ;
+  margin-left: -50px ;
+}
+.edit{
+  width: 800px ;
+  margin-top: 100px ;
+  margin-left: -50px ;
+}
+.show{
+  width: 800px ;
+  margin-top: 100px ;
+  margin-left: -50px ;
+}
+.profile{
+  width: 800px ;
+  margin-top: 100px ;
+  margin-left: -50px ;
+  height: 515px;
+}
+
+ p {
+   margin-left: 600 px ;
+   color: azure ;
+
+ }
+ h5{
+  
+    font-size: larger ;
+    font-weight: bolder ;
+ 
+  
+ }
+ h6{
+   color: black ;
+   margin-left: 400px ;
+   font-size: larger ;
+   font-weight:bold ;
+
+ }
+
+ .row{
+   width: 1000px ;
+ }
+
+  .row img{
+     height: 500px ;
+     height: 300px ;
+     
+  }
+  
+  .row h3{
+    margin-bottom: -10px ;
+    margin-right: 25px ;
+    font-weight: bold ;
+    display: inline;
+
+  }
+  .row h1{
+    font-size: 12px ;
+  }
+  .row .price{
+    margin-top: 10px ;
+    margin-left: 15px ;
+    font-size: 17px ;
+    font-weight: bold ;
+    display: block ;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: -8px ;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .show img{
+    width: 300px ;
+    display: inline ;
+    margin-right: 100px ;
+  }
+  .show a{
+    display: inline;
+  }
+  .show p{
+    width: 30px ;
+  }
+
+  .show h5{
+    color: rgb(87, 209, 103) ;
+    margin: 7px ;
+  }
+
+  
+  

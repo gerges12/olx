@@ -1,0 +1,47 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <class class="new">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><p> اشتري وبيع</p></a>
+    </div>
+    
+    </class>
+    
+    <ul class="nav navbar-nav navbar-right">
+           
+           <li>
+              <div class="topnav">
+              
+                 <div class="search-container">
+                    <form action="/searchg" method="get" enctype="multipart/form-data">
+                      <input type="text" name="general" placeholder="Search.." >
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                   </form>
+               </div>
+             </div> 
+           </li>
+           {{# if login}}
+         
+
+      <li><a href="/user/profile"><span> <img src="http://localhost:3000/{{user.ph}}"> </span> الشخصية</a></li>
+     <li><a href="/"><span class=" glyphicon glyphicon-home"></span>  الرئيسية</a></li>
+
+ <li><a href="/user/inf"><span class="glyphicon glyphicon-pencil"></span>  تعديل</a></li>
+      <li><a href="/user/adminpost"><span class="glyphicon glyphicon-upload"></span> بيع بدون وسيط</a></li>
+
+      <li><a href="/user/logout"><span class="glyphicon glyphicon-log-in"></span> تسجيل خروج</a></li>
+              {{ else }}
+                    <li><a href="/user/signup"><span class="glyphicon glyphicon-user"></span> انشيء حساب</a></li>
+                  <li><a href="/user/signin"><span class="glyphicon glyphicon-log-in"></span> تسجيل الدخول</a></li>
+             {{/if}}
+
+
+    </ul>
+
+  </div>
+</nav>
+
+
+

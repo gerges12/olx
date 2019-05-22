@@ -1,0 +1,153 @@
+<div class="above">
+ <form action="/search" method="post" enctype="multipart/form-data">   
+
+<h6>
+  ابحث الان عن اللى عايز تشترية 
+</h6>
+<div class="row">
+            <div class="col-md-12">
+                <div >
+                    <div class="card-body">
+                        <div class="row">
+                           
+                            <div class="col-md-4">
+                               
+                                <div class="form-group ">
+                                   <h5>نوع البحث</h5>
+                                   
+                                    <select name="ntype" class="form-control" >
+                                       <option value="all" selected>الكل </option>
+                                       <option value="device">الكترونيات</option >
+                                       <option value="cloths">ملابس  </option>
+                                       <option value="cars">سيارات</option>
+                                       <option value="estates">عقارات</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group ">
+                                  <h5>السعر من</h5>
+                             <input type="text" value="all" name="fp" class="form-control"> <br>
+
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group ">
+                                  <h5>الى</h5>
+                                <input type="text" value="all" name="ep" class="form-control"> <br>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group ">
+                                  <h5>البلد</h5>
+                                    <select name="country" class="form-control" >
+                                        <option value="all" selected>الكل </option>
+                                        <option value="cairo">القاهرة</option >
+                                        <option value="alex">الاسكندرية  </option>
+                                        <option value="ismailia">الاسماعيليه</option>
+                                        <option value="mounofia">المنوفيه</option>
+                                        <option value="portsaid">بورسعيد</option>
+                                        <option value="elsois">السويس</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group ">
+                                  <h5>الاستهلاك</h5>
+                                    <select name="statue" class="form-control" >
+                                     <option value="all" selected>الكل </option>
+                                     <option value="new">كسر زيرو</option >
+                                     <option value="Light_use">استعمال خفيف  </option>
+                                     <option value="old">مهلوك</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group ">
+                                  <h5>نوع الصفقه</h5>
+                                    <select name="stype" class="form-control" >
+                                        <option value="all" selected>الكل</option>
+                                        <option value="sell"> بيع</option >
+                                        <option value="borrow">ايجار </option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<button type="submit" class="btn btn-primary">ابحث الان</button>
+
+    </form>
+
+</div>
+<div class="row">
+{{# each posts}}
+           
+             <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                      <img  src="http://localhost:3000/{{file}}" alt="..." class="img-responsive">
+                      <div class="caption">
+                                 <h3>{{this.desc}}  </h3>  {{this.country}}
+                                 <div class="clearfix">
+                                     <div class="price">جنيه {{this.price}}</div>
+                                        <a href="/star/{{this._id}}" class="glyphicon glyphicon-star-empty" role="button"></a> 
+                                                                                  
+                                      <a href="/detail/{{this._id}}" class="btn btn-success pull-right" role="button">التواصل</a> 
+
+                                 </div>
+                      </div>
+                  </div>
+             </div>
+           
+      
+{{/each}}
+<ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="/page/1">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="/page/2">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="/page/3">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="/page/4">4</a>
+        </li>
+          <li class="page-item">
+          <a class="page-link" href="/page/5">5</a>
+        </li>
+          <li class="page-item">
+          <a class="page-link" href="/page/6">6</a>
+        </li>
+          <li class="page-item">
+          <a class="page-link" href="/page/7">7</a>
+        </li>
+</div>
+
+

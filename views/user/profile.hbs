@@ -1,0 +1,57 @@
+<div class="profile">
+  <div class="row">
+    <div class="col-md-6 img">
+<img class="logo" src="http://localhost:3000/{{user.ph}}" alt="My_Logo">
+    </div>
+    <div class="col-md-6 details">
+      <blockquote>
+        <h5> name:{{user.name}} </h5>
+        birthbay:{{user.bday}} <br>
+        email:{{user.email}}
+        city:{{user.city}} 
+      </blockquote>
+      
+    </div>
+  </div>
+      <h3>your favourite</h3>
+      <div class="row">
+        {{# each books}}
+
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">{{desc}}</span> </div>
+                            <!--Image-->
+                            <figure>   <img src="http://localhost:3000/{{file}}" alt="..." class="img-responsive"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: px 15px;">
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>{{body}}</p>
+           <a href="/delete/{{this._id}}" class="btn btn-success pull-right" role="button">احذف</a> 
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              {{/each}}                   
+
+                      </div>
+                         
+
+</div>
+
+
+     
+
+
+  
