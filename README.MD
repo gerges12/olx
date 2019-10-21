@@ -1,3 +1,2 @@
-## Tutorial on How to Build a Shopping Cart with NodeJS/ Express
-
-This repository holds the source code of my YouTube series on how to create a shopping cart with NodeJS/Express/MongoDB
+this project Imitation of the site olx which users can sign up as admin then can
+Show their things used to public using node js express.js mongodb and passport for authentication
